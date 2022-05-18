@@ -8,6 +8,8 @@
 - Desenvolvido com a metodologia "Mobile First", e então para desktop.
 - Compativel com todos os dispositivos mobile e com um toque de design @Gabrielsavdeveloper clean, minimalista e moderno.
 
+### Página hospedada no Github -> [Mini-Portfólio](https://gabrielsav.github.io/responsive-mini-portfolio/)
+
 💙 Para ver esses e mais conteúdos sigam o Canal do @Marlon no Youtube. [Bedimcode](https://www.youtube.com/c/Bedimcode)
 
 ![preview img](/preview.png)
