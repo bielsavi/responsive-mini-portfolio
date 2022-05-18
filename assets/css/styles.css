@@ -1,6 +1,8 @@
 /*=============== GOOGLE FONTS ===============*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 
+
+
 /*=============== VARIABLES CSS ===============*/
 :root {
   /*========== Colors ==========*/
@@ -42,6 +44,19 @@
     --normal-font-size: 1rem;
     --small-font-size: .875rem;
     --smaller-font-size: .813rem;
+  }
+}
+
+@keyframes colorCycle {
+
+  0%,
+  55% {
+    filter: brightness(0) invert(1) opacity(0);
+  }
+
+  11%,
+  33% {
+    filter: none;
   }
 }
 
@@ -315,6 +330,48 @@ body.dark-theme {
   background-color: var(--body-color);
 }
 
+.vercel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-size: 2.5rem;
+  line-height: 4rem;
+  letter-spacing: -0.2rem;
+  color: transparent;
+  transition: .8s;
+
+
+}
+
+
+span {
+  padding: 0 0.67rem;
+  filter: brightness(0) invert(1) opacity(0);
+
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  animation: colorCycle 12s ease-in-out infinite;
+}
+
+span:nth-child(1) {
+  background-image: linear-gradient(90deg, #007cf0, #00dfd8);
+}
+
+span:nth-child(2) {
+  background-image: linear-gradient(90deg, #7928ca, #ff0080);
+  animation-delay: 3.33s;
+}
+
+span:nth-child(3) {
+  background-image: linear-gradient(90deg, #ff4d4d, #f9cb28);
+  animation-delay: 6.66s;
+}
+
+
+
 /*=============== PROJECTS ===============*/
 .projects__card {
   position: relative;
@@ -557,4 +614,6 @@ body.dark-theme {
   .footer__copy {
     margin: 4.5rem 0 2.5rem;
   }
+
+
 }

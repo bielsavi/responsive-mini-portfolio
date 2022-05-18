@@ -89,4 +89,19 @@
     &__buttons-small{
         column-gap: .25rem;
     }
+
+    .vercel {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        font-size: 2.5rem;
+        line-height: 4rem;
+        letter-spacing: -0.2rem;
+        color: transparent;
+        transition: .8s;
+      
+      
+      }
+      
 }
