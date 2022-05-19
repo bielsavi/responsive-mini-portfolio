@@ -70,4 +70,4 @@ sr.reveal(`.profile__info-group`, { interval: 100, delay: 700 })
 sr.reveal(`.profile__buttons`, { delay: 800 })
 sr.reveal(`.filters__content`, { delay: 900 })
 sr.reveal(`.filters`, { delay: 1000 })
-sr.reveal(`div .vercel span`, { delay: 2000 }), { interval: 100 }
+sr.reveal(`div .gradient-webkit`, { delay: 2000 }), { interval: 100 }
