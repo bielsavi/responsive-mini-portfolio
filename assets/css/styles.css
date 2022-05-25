@@ -519,6 +519,7 @@ body.dark-theme {
 .skills__content {
   row-gap: 3.5rem;
   position: relative;
+  justify-content: center;
 
 }
 
@@ -529,15 +530,15 @@ body.dark-theme {
 }
 
 .skills__box {
-  display: flex;
+  display: block;
   justify-content: center;
   column-gap: 3rem;
 }
 
 .skills__group {
   display: grid;
-  align-content: flex-start;
-  row-gap: 1rem;
+  align-content: center;
+  row-gap: 5rem;
 }
 
 .skills__data {
@@ -574,13 +575,61 @@ body.dark-theme {
   background-color: var(--body-color);
 }
 
+.skill-bar {
+  height: 20px;
+  background: var(--text-color-light);
+  border-radius: 3px;
+  width: 20rem;
+  margin-top: 1rem;
+
+}
+
+.skill-description {
+  margin-top: 1.5rem;
+}
+
+.skill-per {
+  height: 1.25rem;
+  background: var(--first-color);
+  border-radius: 3px;
+  position: relative;
+  animation: fillBars 2.5s 1;
+}
+
+.skill-per::before {
+  content: attr(per);
+  position: absolute;
+  padding: 8px;
+  background: var(--title-color);
+  border-radius: 4px;
+  font-size: 10px;
+  top: -6px;
+  right: -10px;
+
+  transform: translateX(50%);
+  color: var(--body-color);
+}
+
+
+
+
+@keyframes fillBars {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 100%;
+  }
+}
+
 /*=============== FOOTER ===============*/
 .footer__copy {
   display: block;
   margin: 2.5rem 0 2rem;
   text-align: center;
   font-size: var(--smaller-font-size);
-  color: var(--text-color-light);
+  color: var(--title-color);
 }
 
 /*=============== SCROLL BAR ===============*/
