@@ -12,4 +12,5 @@ Credits to @Marlon from Bedimcode - [Youtube](https://youtu.be/mq0xJxOTiYo)
 
 💙 To see these and more content follow the Channel @Marlon on Youtube
 
-![preview img](/preview.png)
+
+![Apple iPhone 11 Pro Max Presentation (1)](https://user-images.githubusercontent.com/98740091/180591419-2af978aa-6d62-4316-9079-05439774694f.png)
