@@ -1,15 +1,15 @@
-# 💼 Responsive Mini Portfolio inspirado no Bedimcode
-(Créditos ao @Marlon da Bedimcode - [Youtube](https://youtu.be/mq0xJxOTiYo)
+# 💼 Responsive Mini Portfolio inspired by Bedimcode
+Credits to @Marlon from Bedimcode - [Youtube](https://youtu.be/mq0xJxOTiYo)
 ### 💼 Responsive Mini Portfolio
 
-- Responsive mini portfolio website Utilizando HTML CSS & JavaScript
-- Contém animações em CSS.
-- Inclui tema light e dark mode.
-- Desenvolvido com a metodologia "Mobile First", e então para desktop.
-- Compativel com todos os dispositivos mobile e com um toque de design @Gabrielsavdeveloper clean, minimalista e moderno.
+- Responsive mini portfolio website Using HTML CSS & JavaScript.
+- Contains animations in CSS.
+- Includes light theme and dark mode.
+- Developed with the methodology "Mobile First", and then for desktop.
+- Compatible with all mobile devices 
+- @gabrielsavdeveloper clean, minimalist and modern design.
 
-### Página hospedada no Github -> [Mini-Portfólio](https://gabrielsav.github.io/responsive-mini-portfolio/)
 
-💙 Para ver esses e mais conteúdos sigam o Canal do @Marlon no Youtube. [Bedimcode](https://www.youtube.com/c/Bedimcode)
+💙 To see these and more content follow the Channel @Marlon on Youtube
 
 ![preview img](/preview.png)
