@@ -71,3 +71,4 @@ sr.reveal(`.profile__buttons`, { delay: 800 })
 sr.reveal(`.filters__content`, { delay: 900 })
 sr.reveal(`.filters`, { delay: 1000 })
 sr.reveal(`div .gradient-webkit`, { delay: 2000 }), { interval: 100 }
+

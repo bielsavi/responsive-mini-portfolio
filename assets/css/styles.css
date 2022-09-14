@@ -485,6 +485,7 @@ body.dark-theme {
   border: none;
   outline: none;
   padding: 1rem;
+  
   color: var(--title-color);
   font-size: var(--small-font-size);
   font-family: var(--body-font);
@@ -505,22 +506,22 @@ body.dark-theme {
   position: relative;
   border-radius: 1rem;
   overflow: hidden;
+  width: auto;
+  height: 150px;
+  backdrop-filter: blur(5px);
+  background: rgba(30, 30, 30, 0.1);
+  -webkit-backdrop-filter: blur(5px);
+  border-top: var(--first-color-alt) solid 4px;
+
 }
 
-.projects__card img {
-  width: 100%;
-  height: 100%;
-}
+
 
 .projects__modal {
   position: absolute;
   width: 100%;
   height: 100%;
-  bottom: -100%;
-  left: 0;
-  background: linear-gradient(180deg,
-      hsla(var(--hue), 24%, 40%, .3) 0%,
-      hsla(var(--hue), 24%, 4%, 1) 95%);
+  right: -1.5rem;
   display: grid;
   align-items: flex-end;
   padding: 1.5rem 1.25rem;
@@ -529,7 +530,7 @@ body.dark-theme {
 
 .projects__subtitle,
 .projects__title {
-  color: #fff;
+  color: var(--body-font);
 }
 
 .projects__subtitle {
@@ -537,7 +538,7 @@ body.dark-theme {
 }
 
 .projects__title {
-  font-size: var(--h3-font-size);
+  font-size: var(--normal-font-size-font-size);
   margin-bottom: .75rem;
 }
 
@@ -546,14 +547,14 @@ body.dark-theme {
 }
 
 .projects__card:hover .projects__modal {
-  bottom: 0;
+  right: -1rem;
 }
 
 /*=============== SKILLS ===============*/
 
 
 .skills__content {
-  row-gap: 3.5rem;
+  row-gap: 0.5rem;
   position: relative;
   justify-content: center;
 
@@ -568,34 +569,42 @@ body.dark-theme {
 .skills__box {
   display: block;
   justify-content: center;
-  column-gap: 3rem;
+  column-gap: 0.5rem;
 }
 
 .skills__group {
   display: grid;
   align-content: center;
-  row-gap: 5rem;
+  row-gap: 2rem;
+
 }
 
 .skills__data {
   display: flex;
-  column-gap: .5rem;
+  flex-direction: row;
+  padding: 2rem;
+  column-gap: 1rem;
+  border-radius: 10px;
+  z-index: 2;
+  overflow: hidden;
+  backdrop-filter: blur(5px);
+  background: rgba(30, 30, 30, 0.1);
+  -webkit-backdrop-filter: blur(5px);
+  border-top: var(--first-color-alt) solid 4px;
 }
 
 .skills__data i {
-  font-size: 1rem;
+  font-size: 2rem;
   color: var(--first-color);
+  opacity: 30%;
 }
 
 .skills__name {
   font-size: var(--normal-font-size);
   font-weight: 500;
-  line-height: 18px;
+  line-height: 32px;
 }
 
-.skills__level {
-  font-size: var(--smaller-font-size);
-}
 
 /* Hide and show projects & skills */
 .filters [data-content] {
@@ -609,54 +618,6 @@ body.dark-theme {
 /* Activate button filter */
 .filter-tab-active {
   background-color: var(--body-color);
-}
-
-.skill-bar {
-  height: 20px;
-  background: var(--text-color-light);
-  border-radius: 3px;
-  width: 20rem;
-  margin-top: 1rem;
-
-}
-
-.skill-description {
-  margin-top: 1.5rem;
-}
-
-.skill-per {
-  height: 1.25rem;
-  background: var(--first-color);
-  border-radius: 3px;
-  position: relative;
-  animation: fillBars 2.5s 1;
-}
-
-.skill-per::before {
-  content: attr(per);
-  position: absolute;
-  padding: 8px;
-  background: var(--title-color);
-  border-radius: 4px;
-  font-size: 10px;
-  top: -6px;
-  right: -10px;
-
-  transform: translateX(50%);
-  color: var(--body-color);
-}
-
-
-
-
-@keyframes fillBars {
-  from {
-    width: 0;
-  }
-
-  to {
-    width: 100%;
-  }
 }
 
 /*=============== FOOTER ===============*/
@@ -698,15 +659,16 @@ body.dark-theme {
 
   .profile__buttons {
     flex-direction: column;
-    row-gap: 1rem;
+    row-gap: 2rem;
   }
 
   .skills__box {
-    column-gap: 1rem;
+    column-gap: 2rem;
   }
 
   #skills.filters__active[data-content] {
     display: flex;
+
   }
 }
 
@@ -715,12 +677,12 @@ body.dark-theme {
 /* For medium devices */
 @media screen and (min-width: 576px) {
   .projects__content {
-    grid-template-columns: 332px;
+    grid-template-columns: auto;
     justify-content: center;
   }
 
   .filters__content {
-    width: 332px;
+    width: auto;
     margin: 3rem auto;
   }
 
